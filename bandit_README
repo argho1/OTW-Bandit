@@ -1,0 +1,34 @@
+Hello, I will be putting the way I got througt bandit with a little bit of explanation.
+
+-----------------------------------------------------
+Level 0
+-----------------------------------------------------
+For this level we will just have to ssh into the url.
+
+URL  : bandit.labs.overthewire.org
+Port : 2220
+User : bandit0
+Pass : bandit0
+
+_> ssh -p 1222 bandit0@bandit.labs.overthewire.org
+_> ll /to looks for what files are available.
+_> cat readme /to display the password for Level 1.
+
+-----------------------------------------------------
+Level 1
+-----------------------------------------------------
+Use the same URL and Port from lvl 0 to login.
+
+User : bandit1
+Pass : NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+_> cat - /this won't work as 'cat' inspects '-' as redirction from / to stdout or stdin.
+
+_> cat ./- /this will print the output of the file.
+
+./ is used to reffer to a file in the current directory.
+
+-----------------------------------------------------
+Level 2
+-----------------------------------------------------
+
